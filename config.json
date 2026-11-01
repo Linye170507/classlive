@@ -1,0 +1,46 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 9000,
+    "backlog": 64
+  },
+  "protocol": {
+    "version": 1
+  },
+  "timing": {
+    "heartbeat_interval_s": 10,
+    "suspect_after_s": 30,
+    "dead_after_s": 60,
+    "heartbeat_scan_interval_s": 1.0
+  },
+  "room": {
+    "room_id": "demo-room",
+    "title": "计算机网络实验课 · 课堂实时答题"
+  },
+  "storage": {
+    "path": "data/classlive.db"
+  },
+  "questions": [
+    {
+      "qid": "Q1",
+      "stem": "TCP 三次握手过程中，服务器端收到的第一个报文段的标志位是？",
+      "options": ["SYN=1, ACK=0", "SYN=0, ACK=1", "SYN=1, ACK=1", "FIN=1, ACK=0"],
+      "correct": "A",
+      "duration_s": 60
+    },
+    {
+      "qid": "Q2",
+      "stem": "在 TCP 字节流上划分应用层消息边界，下列哪种做法最可靠？",
+      "options": ["以换行符作为唯一边界", "固定 4 字节长度前缀 + 消息体", "依赖一次 recv 的返回边界", "由 UDP 负责分包"],
+      "correct": "B",
+      "duration_s": 60
+    },
+    {
+      "qid": "Q3",
+      "stem": "HTTP/1.1 默认使用的传输层协议是？",
+      "options": ["TCP", "UDP", "ICMP", "ARP"],
+      "correct": "A",
+      "duration_s": 60
+    }
+  ]
+}

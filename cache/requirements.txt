@@ -1,0 +1,17 @@
+# ClassLive 依赖清单（第 1 周冻结）
+# 运行环境：Python 3.10+，仅使用标准库，禁止引入第三方包。
+# 说明：本文件用于证明项目零外部依赖；下列为标准库模块，不是 pip 包。
+
+socket
+threading
+queue
+sqlite3
+json
+struct
+uuid
+time
+datetime
+multiprocessing
+tkinter
+unittest
+logging
